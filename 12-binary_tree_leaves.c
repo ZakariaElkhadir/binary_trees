@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-#include <stddef.h>
 /**
 * binary_tree_leaves -  counts the leaves in a binary tree
 *
@@ -16,7 +15,7 @@ size_t binary_tree_leaves(const binary_tree_t *tree)
 
 	if (!tree->left && !tree->right)
 		return (1);
-
+	
 
 	rleave = binary_tree_leaves(tree->right);
 	lleave = binary_tree_leaves(tree->left);
